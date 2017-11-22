@@ -7,7 +7,7 @@ def line(array)
   else
     new_array = []
     array.each {|person| new_array.push(" #{array.index(person)+1}. #{person}")}
-    puts "The line is currently: #{new_array.join}"
+    puts "The line is currently:#{new_array.join}"
   end
 end
 
