@@ -5,7 +5,9 @@ def line(array)
   if array.length < 1
     puts "The line is currently empty."
   else
-    puts "The line is currently: " + "#{array.each {|person| print "#{array.index(person)+1}. #{person}"
+    new_array = []
+    array.each {|person| new_array.pop("#{array.index(person)+1}. #{person}")
+    puts "The line is currently: #{new_array.join}"
   end
 end
 
