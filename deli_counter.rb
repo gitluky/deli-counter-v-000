@@ -11,10 +11,18 @@ def line(array)
   end
 end
 
+
 def take_a_number(array, name)
   array.push(name)
   puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
 end
 
-array = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"]
-line(array)
+
+def now_serving(array)
+  if array.length < 1
+    puts "There is nobody waiting to be served!"
+  else
+    puts array[0]
+    array.shift
+  end
+end
